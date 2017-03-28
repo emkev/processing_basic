@@ -12,12 +12,15 @@ void draw()
 {
   background(255);
   
-  translate(width / 2 , height / 2 , -(width / 2));
-  rotateY(map(mouseX , 0 , width , -PI , PI));
+  translate( width/2 , height/2 , (-1)*(width/2) ) ;
+  
+  rotateY( map(mouseX , 0 , width , 0 , PI*2) ) ;
+  
   stroke(100);
   box(400);
   
-  rotateX(map(mouseY , 0 , height , PI , -PI));
+  rotateX( map(mouseY , 0 , height , 0 , PI*2) ) ;
+  
   stroke(150);
   box(200);
 }
