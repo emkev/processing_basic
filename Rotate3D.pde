@@ -14,6 +14,10 @@ void draw()
   
   translate( width/2 , height/2 , (-1)*(width/2) ) ;
   
+  /*  If rotateY() is called within the draw() , 
+      the transformation is RESET when the loop begins again .
+   */
+
   rotateY( map(mouseX , 0 , width , 0 , PI*2) ) ;
   
   stroke(100);
